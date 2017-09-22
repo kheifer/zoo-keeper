@@ -5,17 +5,17 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
     <div>
-        <div *ngIf="childSelectedAnimal">
+        <div *ngIf="childSelectedAnimal" id="edit" class="well">
         <label>Species:</label>
-        <input [(ngModel)]="childSelectedAnimal..species" class="form-control">
+        <input [(ngModel)]="childSelectedAnimal.species" class="form-control">
         <label>Name:</label>
-        <input [(ngModel)]="childSelectedAnimal..name" class="form-control">
+        <input [(ngModel)]="childSelectedAnimal.name" class="form-control">
         <label>Age:</label>
-        <input [(ngModel)]="childSelectedAnimal..age" class="form-control" type='number'>
+        <input [(ngModel)]="childSelectedAnimal.age" class="form-control" type='number'>
         <label>Diet:</label>
         <input [(ngModel)]="childSelectedAnimal.diet" class="form-control">
         <label>Location:</label>
-        <input [(ngModel)]="childSelectedAnimal..location" class="form-control">
+        <input [(ngModel)]="childSelectedAnimal.location" class="form-control">
         <label>Number of needed caretakers, :</label>
         <input [(ngModel)]="childSelectedAnimal.caretakers" type="number" class="form-control">
         <label>Sex:</label>
@@ -24,7 +24,7 @@ import { Animal } from './animal.model';
         <input [(ngModel)]="childSelectedAnimal.likes" class="form-control">
         <label>Dislikes:</label>
         <input [(ngModel)]="childSelectedAnimal.dislikes" class="form-control">
-        <button (click)="doneButtonClicked()">Done</button>
+        <button clas="btn btn-info" (click)="doneButtonClicked()">Done</button>
         </div>
       </div>
   `

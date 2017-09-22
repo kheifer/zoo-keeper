@@ -7,7 +7,15 @@ import {EditAnimalComponent} from './edit-animal.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html'
+  template: `
+  <div class="container">
+  <h1>{{currentZoo}}</h1>
+  <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
+    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+    <hr>
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+  </div>
+  `
 })
 
 export class AppComponent {
