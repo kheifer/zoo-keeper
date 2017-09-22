@@ -14,8 +14,8 @@ import { Animal } from './animal.model';
   <input #newDiet class="form-control">
   <label>Location:</label>
   <input #newLocation class="form-control">
-  <label>Caretakers:</label>
-  <input #newCaretakers class="form-control">
+  <label>Number of needed caretakers, :</label>
+  <input #newCaretakers type="number" class="form-control">
   <label>Sex:</label>
   <input #newSex class="form-control">
   <label>Likes:</label>
