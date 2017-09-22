@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Animal } from './animal.model';
 import {AnimalListComponent} from './animal-list.component';
+import {NewAnimalComponent} from './new-animal.component';
 
 
 @Component({
@@ -8,6 +9,7 @@ import {AnimalListComponent} from './animal-list.component';
   template: `
   <div class="container">
     <h1>{{currentFocus}}</h1>
+    
 
   </div>
     `
