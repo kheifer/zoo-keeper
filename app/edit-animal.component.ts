@@ -16,7 +16,7 @@ import { Animal } from './animal.model';
         <input [(ngModel)]="childSelectedAnimal.diet" class="form-control">
         <label>Location:</label>
         <input [(ngModel)]="childSelectedAnimal.location" class="form-control">
-        <label>Number of needed caretakers, :</label>
+        <label>Number of needed caretakers:</label>
         <input [(ngModel)]="childSelectedAnimal.caretakers" type="number" class="form-control">
         <label>Sex:</label>
         <input [(ngModel)]="childSelectedAnimal.sex" class="form-control">
