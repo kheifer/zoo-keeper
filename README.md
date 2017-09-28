@@ -8,11 +8,23 @@
 _An application that allows for the management of a animal inventory and zoo care._
 
 ## Setup/Installation Requirements
-* Ensure your computer has npm installed
-* Clone the repo
-* Build gulfile.js
-* Open index.html in your preferred browser to launch the application
 
+* Ensure your computer has npm installed
+
+* Clone the repo
+
+* install and run node
+
+* install bower components
+
+```console
+*  run $ git gulp build
+```
+```console
+*  run $ git gulp serve
+```
+
+* Open index.html in your preferred browser to launch the application
 
 # Known Bugs
 
