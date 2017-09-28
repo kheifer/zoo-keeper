@@ -20,7 +20,7 @@ import{ Animal } from './animal.model';
           <li>Likes: {{currentAnimal.likes}}</li>
           <li>Dislikes: {{currentAnimal.dislikes}}</li>
         </ul>
-        <a href="#edit"><button type="button" class="btn btn-default" (click)="editAnimalClicked(currentAnimal)">
+        <a href="#edit"><button type="button" class="btn btn-default floater" (click)="editAnimalClicked(currentAnimal)">
             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit
         </button></a>
       </div>

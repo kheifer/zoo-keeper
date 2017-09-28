@@ -5,6 +5,7 @@ import { FormsModule }  from '@angular/forms';
 import {AnimalListComponent} from './animal-list.component';
 import {NewAnimalComponent} from './new-animal.component';
 import {EditAnimalComponent} from './edit-animal.component';
+import {SearchPipe} from './search.pipe';
 
 
 
@@ -14,7 +15,9 @@ import {EditAnimalComponent} from './edit-animal.component';
   declarations: [ AppComponent,
                   AnimalListComponent,
                   NewAnimalComponent,
-                  EditAnimalComponent
+                  EditAnimalComponent,
+                  SearchPipe
+
    ],
   bootstrap:    [ AppComponent ]
 })
