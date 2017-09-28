@@ -8,7 +8,17 @@ import {EditAnimalComponent} from './edit-animal.component';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="container">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Zoo-Keep</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a>Add New Animal</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="container main">
   <h1>{{currentZoo}}</h1>
   <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
@@ -38,4 +48,5 @@ export class AppComponent {
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
   }
+
 }
