@@ -13,9 +13,6 @@ import {EditAnimalComponent} from './edit-animal.component';
     <div class="navbar-header">
       <a class="navbar-brand">Zoo-Keep</a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a>Add New Animal</a></li>
-    </ul>
   </div>
 </nav>
   <div class="container main">

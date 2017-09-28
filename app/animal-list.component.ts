@@ -15,12 +15,12 @@ import{ Animal } from './animal.model';
       </select>
       <hr>
       <label>Sort Animals by Diet:</label>
-          <select class="form-control" (change)="otherChange($event.target.value)">
-            <option value="all" selected="selected">All Diets</option>
-            <option value="carnivores">Carnivores Only</option>
-            <option value="herbivores">Herbivores Only</option>
-            <option value="omnivores">Omnivores Only</option>
-          </select>
+        <select class="form-control" (change)="otherChange($event.target.value)">
+          <option value="all" selected="selected">All Diets</option>
+          <option value="carnivores">Carnivores Only</option>
+          <option value="herbivores">Herbivores Only</option>
+          <option value="omnivores">Omnivores Only</option>
+        </select>
           <hr>
     <div class="panel panel-default" *ngFor="let currentAnimal of childAnimalList | search:filterByAge| diet:filterByDiet">
     <div class="panel-heading">Animal name: {{currentAnimal.name}}</div>
