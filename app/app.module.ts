@@ -6,6 +6,7 @@ import {AnimalListComponent} from './animal-list.component';
 import {NewAnimalComponent} from './new-animal.component';
 import {EditAnimalComponent} from './edit-animal.component';
 import { SearchPipe } from './search.pipe';
+import { DietPipe } from './diet.pipe';
 
 
 
@@ -17,7 +18,8 @@ import { SearchPipe } from './search.pipe';
                   AnimalListComponent,
                   NewAnimalComponent,
                   EditAnimalComponent,
-                  SearchPipe
+                  SearchPipe,
+                  DietPipe
    ],
   bootstrap:    [ AppComponent ]
 })
